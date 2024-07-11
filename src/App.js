@@ -14,7 +14,7 @@ function App() {
       
 
       <h1>10-7-24--(DAY-7 PRACTICE && TASK)</h1>
-      <center><h1>TASK</h1></center>
+      <center><h1>PRACTICE</h1></center>
       <h2>jsx rule-1</h2>
       <OrderList></OrderList>
       <h2>jsx rule-2</h2>
