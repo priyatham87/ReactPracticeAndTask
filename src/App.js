@@ -52,6 +52,7 @@ function App() {
 }
 export default App;
 
+//nested component of Info component
 const Card=(prop)=>{
   return(
     <>
