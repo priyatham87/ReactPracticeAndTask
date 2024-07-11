@@ -1,28 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
-import CustomButtom, { ButtonContent, GeneralButton } from './components/button/button';
-import MainHeading , { Heading2 as SecondaryHeading, Heading3, Heading4 } from './components/headings/heading';
+import  { ButtonContent, GeneralButton } from './components/button/button';
+import  {  Heading3, Heading4 } from './components/headings/heading';
 import OrderList from './components/list/orderlist';
-import UnOrderList from './components/list/unorderlist';
-import ProfileComponent, { UserProfile } from './components/profile/profilecomponent';
+import  { UserProfile } from './components/profile/profilecomponent';
 import {  ImageJacket, ImageShirt } from './components/image/coustomimage';
 import { BiriyaniList, ListFruit } from './components/list/listiteams';
 import { iplData, jacketData } from './components/list/fruitdata';
 function App() {
   return (
     <div>
-      <h1>9-7-24--(DAY-6 PRACTICE && TASK)</h1>
-      <CustomButtom/>
-      <h1>hi react</h1>
-      <CustomButtom/>
-      <CustomButtom/>
-      <MainHeading/>
-      <SecondaryHeading />
-      <Heading3/>
-      <OrderList/>
-      <UnOrderList/>
-      <ProfileComponent></ProfileComponent>
+      
 
       <h1>10-7-24--(DAY-7 PRACTICE && TASK)</h1>
       <center><h1>TASK</h1></center>

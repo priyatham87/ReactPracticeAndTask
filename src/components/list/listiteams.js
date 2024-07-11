@@ -1,17 +1,6 @@
 import { biriyanis, fruits } from "./fruitdata";
 
-const ListIteams=()=>{
-    return(
-        <div>
-            <li>psp</li>
-            <li>priyatham</li>
-            <li>sai</li>
-        </div>
-    )
-}
-export default ListIteams;
 
-//10/7/24
 export const IteamsList=()=>{
     return(
         <>
