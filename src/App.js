@@ -3,7 +3,7 @@ import './App.css';
 import Greeting, { Info, Wish } from './components/greeting/greeting';
 import { Btn, Button } from './components/button/button';
 import IplData, { Nav } from './components/ipldata/ipldata';
-import   Customcard  from './components/card/card';
+import { Customcard } from './components/card/card';
 const names=["sai","kanaka","venkat"]
 function App() {
   return (
@@ -62,7 +62,7 @@ function App() {
       {
         IplData.map(eachdata=>{
           return (
-          <Customcard ></Customcard>   
+          <Customcard data={eachdata}></Customcard>   
           )
         })
       }
