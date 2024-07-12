@@ -2,7 +2,8 @@
 import './App.css';
 import Greeting, { Info, Wish } from './components/greeting/greeting';
 import { Btn, Button } from './components/button/button';
-
+import IplData, { Nav } from './components/ipldata/ipldata';
+import { Customcard } from './components/card/card';
 const names=["sai","kanaka","venkat"]
 function App() {
   return (
@@ -46,6 +47,31 @@ function App() {
 
       <h1>2.External CSS Styling</h1>
       <Btn text="External CSS Styling"></Btn>
+{/* ********************************************************************************************************* */}
+      {/* ipl cards task */}
+      <center><h1>TASK</h1></center>
+      <div className='header'>
+        {
+          Nav.map( (eachdata)=> {
+            return <Btn text={eachdata}></Btn>
+          })
+        }
+      </div>
+
+      <div className='flex'>
+      {
+        IplData.map(eachdata=>{
+          return (
+          <Customcard data={eachdata}></Customcard>   
+          )
+        })
+      }
+      </div>
+
+      <div className="footer">
+        <h2>Powerded By PSP</h2>
+
+      </div>
 
     </div>
   );

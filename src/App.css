@@ -1,3 +1,24 @@
+.header {
+  height: 10vh;
+  background-color: gray;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(185, 231, 231);
+ 
+}
+.footer{
+  height: 10vh;
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
 }
