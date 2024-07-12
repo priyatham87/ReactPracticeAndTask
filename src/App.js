@@ -3,12 +3,12 @@ import './App.css';
 import Greeting, { Info, Wish } from './components/greeting/greeting';
 import { Btn, Button } from './components/button/button';
 import IplData, { Nav } from './components/ipldata/ipldata';
-import { Customcard } from './components/card/card';
+import   Customcard  from './components/card/card';
 const names=["sai","kanaka","venkat"]
 function App() {
   return (
     <div>
-      <h1>11-7-24--(DAY-8 PRACTICE && TASK)</h1>
+      <h1>12-7-24--(DAY-9 PRACTICE && TASK)</h1>
       <center><h1>PRACTICE</h1></center>
 
       {/* Types of children prop  */}
@@ -62,7 +62,7 @@ function App() {
       {
         IplData.map(eachdata=>{
           return (
-          <Customcard data={eachdata}></Customcard>   
+          <Customcard ></Customcard>   
           )
         })
       }
