@@ -10,3 +10,6 @@ function CustomProgressbar({prices}) {
 }
 
 export default CustomProgressbar;
+
+
+

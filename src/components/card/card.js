@@ -4,14 +4,19 @@ import { Heading3, Heading4 } from "../heading/heading"
 import { Btn } from "../button/button"
 import Card from 'react-bootstrap/Card';
 import CustomProgressbar from "../progressbar/progressbar";
+import CustomAccordion from "../bootstrap/accordion";
+
 
 export const Cards=()=>{
     return(
         <div className="card">
-            <Image source={"https://i.pinimg.com/236x/a6/40/a6/a640a6cd05dc2dfb58ce3ff3467df677.jpg"} width={300} height={220}>
+            <Image source={"https://i.pinimg.com/236x/a6/40/a6/a640a6cd05dc2dfb58ce3ff3467df677.jpg"} width={100} height={220}>
             </Image>
             <Heading3 title={"RCB"}></Heading3>
             <Heading4 cups={0}></Heading4>
+            <CustomAccordion></CustomAccordion>
+            
+           
             <Btn text={"Show More"}></Btn>
 
         </div>
