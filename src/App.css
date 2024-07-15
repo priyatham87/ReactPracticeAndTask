@@ -1,5 +1,18 @@
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list{
+  margin-bottom: 20px;
+}
+
+
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
