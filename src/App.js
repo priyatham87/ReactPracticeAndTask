@@ -16,6 +16,7 @@ function App() {
        <TernaryOperator/>
        <ShortCircuit/>
        <CustomButton/>
+       
        <center><h1>Task</h1></center>
     <div className='flex'>
       {
