@@ -8,7 +8,7 @@ function Customlist(prop) {
         iterable.map(eachIteam=>{
             return(
                 <>
-                <ListGroup.Item>{eachIteam}</ListGroup.Item>
+                <ListGroup.Item >{eachIteam}</ListGroup.Item>
                 </>
             )
         })

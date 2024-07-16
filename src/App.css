@@ -7,13 +7,23 @@
 .list{
   margin-bottom: 20px;
 }
+.d1 {
+  background-color: green;
+  
+}
+
+.d2 {
+  background-color: red;
+  
+}
 
 
 
+/* 
 .App {
   text-align: center;
 
-}
+} */
 
 .App-logo {
   height: 40vmin;
