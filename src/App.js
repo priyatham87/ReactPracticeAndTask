@@ -15,7 +15,7 @@ import FakeStoreApi from './components/classComponent/fakestoreapi';
 function App() {
   return (
     <div>
-      <h1>16-7-24--(DAY-12 PRACTICE && TASK)</h1>
+      <h1>16-7-24---(DAY-12 PRACTICE && TASK)</h1>
       <center><h1>PRACTICE</h1></center>
       <Subscribecomponent/>
       <TodoComponent/>
