@@ -1,6 +1,6 @@
 export const Heading3=(prop)=>{
     const {title}=prop
-    return <h3>Title:{title}</h3>
+    return <h3>{title}</h3>
 };
 
 export const Heading4=(prop)=>{
