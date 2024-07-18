@@ -1,0 +1,13 @@
+.squareStyle-Odd{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    margin: 20px;
+}
+
+.squareStyle-Even{
+    width: 100px;
+    height: 100px;
+    background-color:green;
+    margin: 20px;
+}

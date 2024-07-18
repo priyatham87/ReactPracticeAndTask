@@ -1,47 +1,34 @@
 // import logo from './logo.svg';
 import './App.css';
-import Customcard,{  Cards, OrderList } from './components/card/card';
+import Customcard from './components/card/card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import fakeData, { Nav } from './components/fakedata/fakedata';
 import { Btn } from './components/button/button';
-import MyComponent from './components/bootstrap/mycomponent';
-import Spinner from './components/spinner/CustomSpinner';
-import { Audio } from 'react-loader-spinner';
+import Subscribecomponent from './components/classComponent/subscribe-Button';
+import TodoComponent from './components/classComponent/todo';
+import Counter from './components/classComponent/counter';
+import Square from './components/classComponent/square-task';
+import FakeStoreApi from './components/classComponent/fakestoreapi';
+
 
 
 function App() {
   return (
     <div>
-      <h1>12-7-24--(DAY-9 PRACTICE && TASK)</h1>
+      <h1>16-7-24--(DAY-12 PRACTICE && TASK)</h1>
       <center><h1>PRACTICE</h1></center>
-      
-      {/* 13-7-24 */}
-      <OrderList list={["Apple","Banana","Watermelon","Graps"]}></OrderList>
-      <Cards></Cards>
-      <Spinner></Spinner>
-      <Audio color={"blue"}></Audio>
-      <MyComponent></MyComponent>
+      <Subscribecomponent/>
+      <TodoComponent/>
+     
       
 
       <center><h1>TASK</h1></center>
+      <Counter/>
+      <Square/>
       
-      <div className='header'>
-        {
-          Nav.map( (eachdata)=> {
-            return <Btn text={eachdata}></Btn>
-          })
-        }
-      </div>
+     
 
-      <div className='flex'>
-      {
-        fakeData.map((eachIteam,i)=> <Customcard data={eachIteam}></Customcard>)
-      }
-      </div>
-      
-      <div className="footer">
-        <h2>Powerded By PSP</h2> 
-      </div>
+      <FakeStoreApi/>
 
     </div>
   );

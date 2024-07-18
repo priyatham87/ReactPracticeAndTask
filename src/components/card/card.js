@@ -44,8 +44,9 @@ function Customcard(prop) {
       <Card.Body>
         <Heading3 title={title}></Heading3>
         <Heading4 cups={price}></Heading4>
-        <Btn text={"Show More"}></Btn>
         <CustomProgressbar prices={price}></CustomProgressbar>
+        <br></br>
+        <Btn text={"Show More"}></Btn>
       </Card.Body>
     </Card>
    </div>
