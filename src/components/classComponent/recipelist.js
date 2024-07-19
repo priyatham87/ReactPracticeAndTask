@@ -3,7 +3,9 @@ import { Component } from "react";
 import { Image } from "../image/image";
 import { Heading3 } from "../heading/heading";
 import Customlist from "../list/list";
-import Table from 'react-bootstrap/Table';
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
 
 class RecipeList extends Component {
   state = {
