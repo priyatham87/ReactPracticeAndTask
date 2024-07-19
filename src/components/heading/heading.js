@@ -7,3 +7,4 @@ export const Heading4=(prop)=>{
     const {cups}=prop
     return <h4>Price:{cups}</h4>
 };
+
