@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import FetchData from "./components/classComponent/fetchExample2";
 import RecipeList from "./components/classComponent/recipelist";
 import CustomTable from "./components/Table/table";
-
+import Country from "./components/country/country";
 
 function App() {
   return (
@@ -20,9 +20,9 @@ function App() {
 
       <center>
         <h1>TASK</h1>
-        </center>
-        <CustomTable/>
-      
+      </center>
+      <CustomTable />
+      <Country />
     </div>
   );
 }
