@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import FetchExample from "./components/classComponent/fetchExample";
 import FakeProducts from "./components/classComponent/fetchDataOnRating";
+import Square from "./components/classComponent/square-task";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <h1>TASK</h1>
       </center>
       <FakeProducts />
+      <Square/>
     </div>
   );
 }
