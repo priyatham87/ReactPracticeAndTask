@@ -1,19 +1,19 @@
-.card {
-    border: 2px solid black;
-    width: 30%;
-    border-radius: 30px;
-    margin: 20px;
+.card{
+    border: 1px solid whitesmoke;
+    background-color: white;
+    border-radius: 1vh;
+    margin: 2vw;
+    width: 28%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px rgb(126, 123, 123);
+    text-align: center;
+
 }
 
 .flex{
     display: flex;
-   
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+    background-color: rgb(225, 225, 225);
+    
 
-.image{
-    width: 70%;
-    height: 60%;
 }
