@@ -24,7 +24,7 @@ const UseEffectEx1 = () => {
 
   useEffect(()=>{
     console.log("useEffect2 Exected...Age or Count Incresed");
-  },[count, age])
+  },[count, age])//if we not mention dependency array[] useEffect prints infinite
 
   // const mouseMove=()=>{
   //   console.log("mouse moving");
