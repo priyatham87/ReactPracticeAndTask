@@ -1,4 +1,6 @@
 import './App.css'; 
+import RecipeList from './hooks/recipeUseState/recipe';
+import Square from './hooks/square/square';
 import UseStateExample from './hooks/usestate/useStateEx1';
 import UseStateExample2 from './hooks/usestate/useStateEx2';
 function App() {
@@ -10,6 +12,9 @@ function App() {
    <UseStateExample2/>
 
    <center><h1>TASK</h1></center>
+   <RecipeList/>
+   <h2>Click Add Square to display the containers...</h2>
+   <Square/>
   </div>
   );
 }
