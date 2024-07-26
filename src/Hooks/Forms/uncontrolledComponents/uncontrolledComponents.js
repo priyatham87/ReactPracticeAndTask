@@ -69,6 +69,7 @@ import React, { useRef, useState } from 'react'
   {
     error &&<span style={{color:"red"}}>{error}</span>
   }
+  <br></br>
   {/* <div className="form-check mb-3">
     <label className="form-check-label">
       <input className="form-check-input" type="checkbox" name="remember" />{" "}
