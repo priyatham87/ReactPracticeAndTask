@@ -1,12 +1,10 @@
 import React, { useRef, useState } from "react";
 
-function UncontrolledForms() {
+function UncontrolledTask() {
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  const [error, setError] = useState("");
-
-  const [userData,setUserData]=useState({})
+  const [error, setError] = useState(null);
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -14,58 +12,38 @@ function UncontrolledForms() {
     const passwordEntered = passwordRef.current.value;
     console.log("user entered data", emailEntered, passwordEntered);
 
-    if (emailEntered.length < 15 && passwordEntered.length < 15) {
-      //allow user to submit
-      sucessSubmit(emailEntered, passwordEntered);
-      setError("");
-    } else {
-      //throw error
+    if (emailEntered.length < 15 && passwordEntered.length < 15) 
+    {
+      setError(null);
+      sucessSubmit(emailEntered, passwordEntered); 
+    } 
+    else 
+    {
       setError("please enter below 15 characters for email and password");
     }
   };
 
   const sucessSubmit = async (username, password) => {
-    // fetch("https://dummyjson.com/auth/login", {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify({
-    //       username: username,
-    //       password: password,
-    //     }),
-    //   })
-    //     .then((res) => res.json())
-    //     .then(data =>console.log(data));
-
     try {
       const response = await fetch("https://dummyjson.com/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          // username: username,
-          // password: password,
           username,
           password,
         }),
       });
       const finalResponse = await response.json();
 
-      if (finalResponse.message) {
-        alert(finalResponse.message);
-      } else {
-        console.log(finalResponse, "finalresponse");
-        setUserData(finalResponse)
-      }
-    } catch (err) {}
-    // alert("client validations are sucessfull")
+      console.log(finalResponse, "Final Response");
+    } catch (err) {
+
+    }
+    
   };
   return (
     <>
-    {
-      Object.keys(userData).length>0 ?(
-        <>
-        <h2>Welcome {userData.firstName}</h2>
-        </>
-      ):<form onSubmit={submitHandler} style={{maxWidth:500}}>
+     <form onSubmit={submitHandler} style={{maxWidth:500}}>
       <div className="mb-3 mt-3">
         <label htmlFor="email" className="form-label">
           Email:
@@ -104,9 +82,9 @@ function UncontrolledForms() {
         Submit
       </button>
     </form>
-    }
+    
     </>
     
   );
 }
-export default UncontrolledForms;
+export default UncontrolledTask;
