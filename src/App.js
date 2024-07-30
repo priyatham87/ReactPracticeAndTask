@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+// import NavigationStack from './navigations/navigation';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Navigations from './Task/Navigations/navigations';
 
 
 function App() {
   return (
-    <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
+    <div >
+    
+    {/* <NavigationStack/> */}
+    {/* <center><h1>TASK</h1></center> */}
+    <Navigations/>
   </div>
   );
 }
