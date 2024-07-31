@@ -32,6 +32,16 @@ const NavBar = () => {
               user
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink to={"/user/admin"} style={linkStyle}>
+              Admin
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to={"/recipe"} style={linkStyle}>
+              Recipe
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>

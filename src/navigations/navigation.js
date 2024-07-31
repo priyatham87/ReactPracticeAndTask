@@ -6,6 +6,9 @@ import BlogPage from "../screens/blogpage";
 import InvalidPage from "../screens/invalidpage";
 import UserScreen from "../screens/userscreen";
 import AdminScreen from "../screens/adminscreen";
+import RecipePage from "../screens/recipescreen";
+import RecipeDetails from "../screens/recipedetails";
+import DoctorScreen, { NewDoctors, OldDoctors } from "../screens/doctorscreen";
 const NavigationStack=()=>{
     return(
         <BrowserRouter>
@@ -19,9 +22,15 @@ const NavigationStack=()=>{
             <Route path="user" element={<UserScreen/>}/>
             <Route path="user/*" element={<UserScreen/>} />
             <Route path="user/admin" element={<AdminScreen/>} />
+            <Route path="recipe" element={<RecipePage/>}/>
+            
+            <Route path="doctors" element={<DoctorScreen/>}>
+            <Route path="new" element={<NewDoctors/>}/>
+            <Route path="old" element={<OldDoctors/>}/>
+            </Route>
 
             {/* dynamic routes */}
-            <Route path="users/:userId" element={<UserScreen />} />
+            <Route path="recipe/:cuisine/:recipeId" element={<RecipeDetails/>} />
         </Routes>
         </BrowserRouter>
     )
