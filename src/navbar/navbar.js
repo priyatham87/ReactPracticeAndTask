@@ -1,10 +1,13 @@
-import { Link,NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./navbar.css";
+import { useContext } from "react";
+import { DataContext } from "../App";
 
 const NavBar = () => {
+  const{darkMode}=useContext(DataContext)
   const linkStyle = { margin: 10, textDecoration: "none",display:"flex"};
   return (
-    <nav className="navbar navbar-expand-sm bg-light navbar-light">
+    <nav className={`navbar navbar-expand-sm bg-${darkMode ? "dark" : "light"} navbar-dark`}>
       <div className="container-fluid">
         <ul className="navbar-nav">
           <li className="nav-item">
@@ -40,6 +43,16 @@ const NavBar = () => {
           <li className="nav-item">
             <NavLink to={"/recipe"} style={linkStyle}>
               Recipe
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to={"/dropdown"} style={linkStyle}>
+              DropDownList
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to={"/recipedropdown"} style={linkStyle}>
+              RecipeDropDown
             </NavLink>
           </li>
         </ul>

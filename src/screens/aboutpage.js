@@ -1,3 +1,4 @@
+
 import NavBar from "../navbar/navbar";
 
 const AboutPage=()=>{
@@ -5,6 +6,7 @@ const AboutPage=()=>{
         <>
         <NavBar/>
         <h2>welcome to About Page</h2>
+     
         </>
     )
 }
