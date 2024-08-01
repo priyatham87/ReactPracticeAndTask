@@ -8,12 +8,14 @@ import ControlledSingleState from './Hooks/Forms/controlledComponents/controlled
 function App() {
   return (
     <div >
-      <h1>psp</h1>
+       <h1>26-7-24--(DAY-20 PRACTICE && TASK)</h1>
+       <center><h1>PRACTICE</h1></center>
       <h2>controlled Multistage</h2>
       <ControlledForms/>
       <h2>controlled Singlestage</h2>
-      <ControlledSingleState/>
-    
+      <ControlledSingleState/> 
+
+      <center><h1>TASK</h1></center>
   </div>
   );
 }
