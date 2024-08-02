@@ -10,9 +10,14 @@ function App() {
 
   const [username,setUserName]=useState("psp")
   const [darkmode,setDarkMode]=useState(true)
+  const [counter,setCounter]=useState(100)
 
   const changeUserName=(newname)=>{
     setUserName(newname)
+  }
+
+  const changeCounter=(value)=>{
+    setCounter(counter+value)
   }
 
   return (
@@ -20,7 +25,9 @@ function App() {
     value={{
       username,
       darkmode,
-      changeUserName
+      changeUserName,
+      counter,
+      changeCounter
     }}
     >
        <NavigationStack/>

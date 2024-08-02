@@ -10,7 +10,7 @@ const HomePage=()=>{
     return(
         <>
         <NavBar/>
-        <h2>welcome to home page {globalData.username}</h2>
+        <h2>welcome to home page {globalData.username}  {globalData.counter}</h2>
         
     
         </>

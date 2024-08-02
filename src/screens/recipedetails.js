@@ -9,6 +9,7 @@ import OrderList from "../list/orderlist";
 
 const RecipeDetails = () => {
   const urlparams = useParams();
+  console.log(urlparams);
 
   const [recipe, setRecipe] = useState({});
 
