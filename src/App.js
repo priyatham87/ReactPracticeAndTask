@@ -5,12 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Navigations from './Task/Navigations/navigations';
 
 
+
 function App() {
   return (
     <div >
-    
+    {/* <h2>practice</h2> */}
     {/* <NavigationStack/> */}
-    {/* 4 */}
+    {/* Task*/}
     <Navigations/>
   </div>
   );

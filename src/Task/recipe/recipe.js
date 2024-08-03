@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from 'axios'
 import Orderlist from "../list/list";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 const RecipeList=()=>{
