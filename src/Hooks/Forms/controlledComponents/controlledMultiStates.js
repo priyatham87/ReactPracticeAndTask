@@ -1,4 +1,5 @@
 import React, {  useState } from "react";
+import './loginform.css'
 
 function ControlledForms() {
 
@@ -92,7 +93,8 @@ return (
         <>
         <h2>Welcome {userData.firstName} {userData.lastName}</h2>
         </>
-      ):<form onSubmit={submitHandler} style={{maxWidth:500}}>
+      ):<div className="form-container">
+        <form onSubmit={submitHandler} style={{maxWidth:500}}>
       <div className="mb-3 mt-3">
         <label htmlFor="email" className="form-label">
           Email:
@@ -135,6 +137,7 @@ return (
         Submit
       </button>
     </form>
+      </div>
     }
     <h2>List of Register Users..</h2>
     <ol>
