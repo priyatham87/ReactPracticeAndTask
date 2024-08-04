@@ -11,6 +11,7 @@ import RecipeDetails from "../screens/recipedetails";
 import DoctorScreen, { NewDoctors, OldDoctors } from "../screens/doctorscreen";
 import DropDownList from "../dropdownlist/dropdown";
 import RecipeDropDownList from "../screens/recipedropdownlist";
+import UseReducerTicket from "../screens/UseReducer";
 const NavigationStack=()=>{
     return(
         <BrowserRouter>
@@ -34,6 +35,8 @@ const NavigationStack=()=>{
             <Route path="dropdown" element={<DropDownList/>}/>
 
             <Route path="recipedropdown" element={<RecipeDropDownList/>}/>
+
+            <Route path="usereducer" element={<UseReducerTicket/>}/>
 
             {/* dynamic routes */}
             <Route path="recipe/:cuisine/:recipeId" element={<RecipeDetails/>} />

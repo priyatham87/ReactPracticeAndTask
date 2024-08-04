@@ -55,6 +55,11 @@ const NavBar = () => {
               RecipeDropDown
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink to={"/usereducer"} style={linkStyle}>
+              UseReducerTicketBooking
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>
