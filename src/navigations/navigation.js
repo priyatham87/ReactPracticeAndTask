@@ -9,6 +9,7 @@ import AdminScreen from "../screens/adminscreen";
 import RecipePage from "../screens/recipescreen";
 import RecipeDetails from "../screens/recipedetails";
 import DoctorScreen, { NewDoctors, OldDoctors } from "../screens/doctorscreen";
+import JokeGenerator from "../screens/jokeGenerator";
 const NavigationStack=()=>{
     return(
         <BrowserRouter>
@@ -28,6 +29,8 @@ const NavigationStack=()=>{
             <Route path="new" element={<NewDoctors/>}/>
             <Route path="old" element={<OldDoctors/>}/>
             </Route>
+
+            <Route path="jokegenerator" element={<JokeGenerator/>}/>
 
             {/* dynamic routes */}
             <Route path="recipe/:cuisine/:recipeId" element={<RecipeDetails/>} />

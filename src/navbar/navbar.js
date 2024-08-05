@@ -42,6 +42,11 @@ const NavBar = () => {
               Recipe
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink to={"/jokegenerator"} style={linkStyle}>
+            JokeGenerator
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>

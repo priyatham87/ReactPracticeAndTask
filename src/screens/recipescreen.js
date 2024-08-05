@@ -3,6 +3,7 @@ import NavBar from "../navbar/navbar";
 import axios from "axios";
 import OrderList from "../list/orderlist";
 import { Link } from "react-router-dom";
+// import './recipescreen.css'
 
 const RecipePage=()=>{
      
