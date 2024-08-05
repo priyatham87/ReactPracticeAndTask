@@ -2,9 +2,11 @@ import { NavLink } from "react-router-dom";
 import "./navbar.css";
 import { useContext } from "react";
 import { DataContext } from "../App";
+import { RecipeContext } from "../navigations/navigation";
 
 const NavBar = () => {
   const{darkMode}=useContext(DataContext)
+  const{favouriteRecipe}=useContext(RecipeContext)
   const linkStyle = { margin: 10, textDecoration: "none",display:"flex"};
   return (
     <nav className={`navbar navbar-expand-sm bg-${darkMode ? "dark" : "light"} navbar-dark`}>
@@ -58,6 +60,16 @@ const NavBar = () => {
           <li className="nav-item">
             <NavLink to={"/usereducer"} style={linkStyle}>
               UseReducerTicketBooking
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to={"/recipemaker"} style={linkStyle}>
+              RecipeMaker
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to={"/favouriterecipes"} style={linkStyle}>
+              FavouriteRecipes {favouriteRecipe.length}
             </NavLink>
           </li>
         </ul>
