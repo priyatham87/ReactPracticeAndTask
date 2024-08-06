@@ -1,11 +1,13 @@
+import withProfileData from "../hoc/profiledata";
 import NavBar from "../navbar/navbar";
 
-const AdminScreen=()=>{
+const AdminScreen=(prop)=>{
+    const {username}=prop.data
     return(
         <>
         <NavBar/>
-        <h2>welcome to AdminScreen page</h2>
+        <h2>welcome to AdminScreen page {username}</h2>
         </>
     )
 }
-export default AdminScreen;
+export default withProfileData(AdminScreen);
