@@ -6,7 +6,7 @@ const AdminScreen=(prop)=>{
     return(
         <>
         <NavBar/>
-        <h2>welcome to AdminScreen page {username}</h2>
+        <h2>welcome to AdminScreen page {username}...</h2>
         </>
     )
 }
