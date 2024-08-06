@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const RecipeMaker=()=>{
     const {recipe,addfavouriteRecipe}=useContext(RecipeContext)
-    console.log(recipe);
+   
     const navigate = useNavigate();
 
     const addFoodHandler=(eachFood)=>{
