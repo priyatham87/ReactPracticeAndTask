@@ -120,6 +120,8 @@ const NavigationStack=()=>{
 
             <Route path="recipemaker" element={<RecipeMaker/>}/>
 
+            <Route path="favouriterecipes" element={<FavouriteRecipes/>}/>
+
             <Route path="recipemaker/favouriteRecipes" element={<FavouriteRecipes/>}/>
 
             {/* dynamic routes */}
