@@ -72,6 +72,11 @@ const NavBar = () => {
               FavouriteRecipes {favouriteRecipe.length}
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink to={"/viewRecipes"} style={linkStyle}>
+              ViewRecipes 
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>

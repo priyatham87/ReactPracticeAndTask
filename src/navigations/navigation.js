@@ -18,6 +18,7 @@ import RecipeMaker from "../screens/RecipeMaker";
 import FavouriteRecipes from "../screens/favouriteRecipes";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ViewRecipes from "../screens/ViewRecipes";
 
 export const RecipeContext=createContext()
 
@@ -25,6 +26,8 @@ const NavigationStack=()=>{
     const [recipe,setRecipe]=useState([]);
 
     const [favouriteRecipe,setFavouriteRecipe]=useState([])
+
+    const [viewRecipes,setViewRecipes]=useState({})
 
     useEffect(()=>{
         FetchData();
@@ -74,7 +77,7 @@ const NavigationStack=()=>{
 
     const removeFromFavourite=(id)=>{
         const newRecipesList = recipe.map((eachRecipe) => {
-            if (eachRecipe.id == id) {
+            if (eachRecipe.id === id) {
               return { ...eachRecipe, existsInFavorite: false };
             } else {
               return eachRecipe;
@@ -87,12 +90,19 @@ const NavigationStack=()=>{
 
     }
 
+    const viewRecipesItems=(eachRecipe)=>{
+        setViewRecipes(eachRecipe)
+
+    }
+
     return(
         <RecipeContext.Provider value={{
             recipe:recipe,
             favouriteRecipe:favouriteRecipe,
             addfavouriteRecipe:addfavouriteRecipe,
-            removeFromFavourite:removeFromFavourite
+            removeFromFavourite:removeFromFavourite,
+            viewRecipes:viewRecipes,
+            viewRecipesItems:viewRecipesItems
         }}>
             <BrowserRouter>
         <Routes>
@@ -121,6 +131,8 @@ const NavigationStack=()=>{
             <Route path="recipemaker" element={<RecipeMaker/>}/>
 
             <Route path="favouriterecipes" element={<FavouriteRecipes/>}/>
+
+            <Route path="viewRecipes" element={<ViewRecipes/>}/>
 
             {/* dynamic routes */}
             <Route path="recipe/:cuisine/:recipeId" element={<RecipeDetails/>} />
