@@ -5,6 +5,7 @@ import NavigationStack from './navigations/navigation';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
+
 export const DataContext=createContext();
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
     >
        <NavigationStack/>
     </DataContext.Provider>
+    
     
   );
 }
