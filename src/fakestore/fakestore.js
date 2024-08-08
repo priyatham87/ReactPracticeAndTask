@@ -23,6 +23,7 @@ const FakeStoreApi = () => {
             <th>TITLE</th>
             <th>CATEGORY</th>
             <th>PRICE</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
