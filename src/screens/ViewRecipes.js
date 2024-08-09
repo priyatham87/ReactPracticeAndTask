@@ -9,9 +9,7 @@ const ViewRecipes = () => {
     const { viewRecipes ,addfavouriteRecipe,} = useContext(RecipeContext);
    const [isFavourite,setIsFavourite]=useState(false)
    
-    console.log(viewRecipes.existsInFavorite);
-
-    const addFodHandler=(foodItem)=>{
+    const addFodHandlerInView=(foodItem)=>{
         addfavouriteRecipe(foodItem)
         setIsFavourite(true)
     }
@@ -30,9 +28,9 @@ const ViewRecipes = () => {
                             <h3>INSTRUCTIONS</h3>
                             <OrderList list={viewRecipes.instructions} />
                             {isFavourite ? (
-                                <Link to={"/favouriteRecipes"}><button >Go To Favourite</button></Link>
+                                <Link to={"/favouriterecipes"}><button >Go To Favourite</button></Link>
                             ) : (
-                                <button onClick={()=>addFodHandler(viewRecipes)}>Add To Favourite</button>
+                                <button onClick={()=>addFodHandlerInView(viewRecipes)}>Add To Favourite</button>
                             )}
                         </div> :
                         <h2>Loading!!!!</h2>

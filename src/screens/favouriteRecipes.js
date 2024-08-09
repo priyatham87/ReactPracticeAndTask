@@ -6,7 +6,7 @@ import './RecipeMaker.css';
 const FavouriteRecipes = () => {
     const { favouriteRecipe, removeFromFavourite } = useContext(RecipeContext);
 
-    const removeFoodHandler = (eachFood) => {
+    const removeFoodHandler = (eachFood) =>{
         removeFromFavourite(eachFood.id);
     };
 

@@ -9,6 +9,7 @@ const RecipeMaker = () => {
     const { recipe, addfavouriteRecipe ,viewRecipesItems} = useContext(RecipeContext);
     const [searchFood,setSearchFood]=useState("")
     const [filteredList, setFilteredList] = useState([])
+    const [isFavourite,setIsFavourite]=useState(false)
 
     useEffect(()=>{
 
@@ -17,7 +18,9 @@ const RecipeMaker = () => {
     },[searchFood])
     
     const addFoodHandler = (eachFood) => {
-        addfavouriteRecipe(eachFood);
+        
+        addfavouriteRecipe(eachFood);    
+        setIsFavourite(true)
     };
 
     const viewRecipesHandler=(eachItems)=>{
@@ -33,9 +36,12 @@ const RecipeMaker = () => {
     const fetchHandler=async()=>{
         try{
             const {status, data}=await axios.get(`https://dummyjson.com/recipes/search?q=${searchFood}`)
+            const newData=data.recipes.map(eachData=>{
+                return {...eachData,existsInFavourit:false}
+            })
+            
             if(status===200){
-                setFilteredList(data.recipes)
-                // console.log(data)
+                setFilteredList(newData)  
             }
         }
         catch(err){
@@ -51,14 +57,14 @@ const RecipeMaker = () => {
             value={searchFood}></input>
             </center>
             <div className="recipe-container" style={{backgroundColor:"ghostwhite"}}>
-                {filteredList && filteredList.length > 0 &&
+                {
                     filteredList.map(each => (
                         <div key={each.name} className="recipe-card">
                             <h2>{each.name}</h2>
                             <img src={each.image} alt={each.name} width={200} height={200} />
                             <Link to={"/viewRecipes"}><button onClick={()=>viewRecipesHandler(each)}>View Recipe</button></Link>
-                            {each.existsInFavorite ? (
-                                <Link to={"/favouriteRecipes"}><button >Go To Favourite</button></Link>
+                            {isFavourite ? (
+                                <Link to={"/favouriterecipes"}><button >Go To Favourite</button></Link>
                             ) : (
                                 <button onClick={() => addFoodHandler(each)}>Add Favourite</button>
                             )}
