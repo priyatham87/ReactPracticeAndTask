@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import NavBar from "../navbar/navbar";
 import { RecipeContext } from "../navigations/navigation";
 import OrderList from "../list/orderlist";
@@ -7,11 +7,12 @@ import { Link } from "react-router-dom";
 
 const ViewRecipes = () => {
     const { viewRecipes ,addfavouriteRecipe,} = useContext(RecipeContext);
-   const [isFavourite,setIsFavourite]=useState(false)
+    console.log(viewRecipes.existsInFavorite)
+  
    
     const addFodHandlerInView=(foodItem)=>{
-        addfavouriteRecipe(foodItem)
-        setIsFavourite(true)
+        console.log("added")
+        addfavouriteRecipe(foodItem) 
     }
     
     return (
@@ -27,7 +28,7 @@ const ViewRecipes = () => {
                             <OrderList list={viewRecipes.ingredients} />
                             <h3>INSTRUCTIONS</h3>
                             <OrderList list={viewRecipes.instructions} />
-                            {isFavourite ? (
+                            {viewRecipes.existsInFavorite ? (
                                 <Link to={"/favouriterecipes"}><button >Go To Favourite</button></Link>
                             ) : (
                                 <button onClick={()=>addFodHandlerInView(viewRecipes)}>Add To Favourite</button>

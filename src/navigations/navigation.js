@@ -37,7 +37,7 @@ const NavigationStack=()=>{
         try{
             const {status,data}=await axios.get("https://dummyjson.com/recipes")
             const newData=data.recipes.map(eachData=>{
-                return {...eachData,existsInFavourit:false}
+                return {...eachData,existsInFavorite:false}
             })
         if(status===200)
         {
@@ -51,6 +51,8 @@ const NavigationStack=()=>{
 
     const addfavouriteRecipe=(newDish)=>{
         const recipeExist=favouriteRecipe.find((eachFood)=>eachFood.id===newDish.id)
+
+        setViewRecipes({...viewRecipes, existsInFavorite:true} )
         
         const newRecipes = recipe.map((eachRecipe) => {
             if (eachRecipe.id === newDish.id) {
@@ -91,6 +93,7 @@ const NavigationStack=()=>{
     }
 
     const viewRecipesItems=(eachRecipe)=>{
+        
         setViewRecipes(eachRecipe)
 
     }
