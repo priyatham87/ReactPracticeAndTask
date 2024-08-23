@@ -1,0 +1,15 @@
+.WeatherList{
+    text-align: center;
+    margin-top: 50px;
+    margin: 0px;
+    background-image: url("https://img.freepik.com/free-vector/soft-blue-mosaic-pattern-background_1409-1907.jpg?t=st=1724134301~exp=1724137901~hmac=5d5e71161c3ae5d4ca59ea06c000e03503f7ac2734ad615793162e0f9a2bf73c&w=1060");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.dataofcity{
+    margin: 500px;
+    margin-top: 10px;
+}
