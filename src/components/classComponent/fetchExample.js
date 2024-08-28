@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Customcard from "../card/card";
 
-class FetchExample extends Component {
+class  FetchExample extends Component {
   state = {
     product: [],
     loader: true,
