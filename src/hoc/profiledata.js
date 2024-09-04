@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 
 const withProfileData = (Component) => {
   return () => {
-    // const profileDetails={
-    //         name:"psp"
-    //     }
+    const infoDetails={
+            name:"psp"
+        }
     const [profileData, setProfileData] = useState({});
 
     useEffect(() => {
@@ -24,7 +24,7 @@ const withProfileData = (Component) => {
       } catch (err) {}
     };
 
-    return <Component data={profileData} />;
+    return <Component data={profileData} info={infoDetails}/>;
   };
 };
 export default withProfileData;
