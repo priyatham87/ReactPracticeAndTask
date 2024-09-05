@@ -19,8 +19,8 @@ const UseMemo=()=>{
     // const isEven= useMemo(()=>{
     //     return age%2===0?"even":"odd"
     // },[age])
-    const [age, incrementAge] = useCounter(10);
-    const [weight, incrementWeight] = useCounter(60, 2);
+    const [age, incrementAge,decrementAge,resetAge] = useCounter(10);
+    const [weight, incrementWeight,decrementWeight,resetWeight] = useCounter(60, 2);
 
    
     return(
@@ -34,7 +34,13 @@ const UseMemo=()=>{
       </h3>
       <h3>current weight {weight}</h3>
       <CustomButton text="Increase age" onPress={incrementAge} />
+      <button onClick={decrementAge}>Decrement age</button>
+      <button onClick={resetAge}>Reset Age</button>
+      <br></br>
+      <br></br>
       <CustomButton text="Increase weight" onPress={incrementWeight} />
+      <button onClick={decrementWeight}>Decrement Weight</button>
+      <button onClick={resetWeight}>Reset Weight</button>
         </>
     )
 }
