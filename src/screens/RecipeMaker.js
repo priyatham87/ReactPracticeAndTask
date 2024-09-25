@@ -61,7 +61,7 @@ const RecipeMaker = () => {
             <center>
             <input placeholder="search"
             onChange={searchHandler}
-            value={searchFood}></input>
+            value={searchFood} style={{ width: '300px', height: '50px' }} ></input>
             </center>
             <div className="recipe-container" style={{backgroundColor:"ghostwhite"}}>
                 {

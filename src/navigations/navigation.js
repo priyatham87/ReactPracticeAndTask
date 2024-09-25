@@ -91,6 +91,8 @@ const NavigationStack = () => {
     >
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<RecipeMaker />} />
+          
           <Route path="recipemaker" element={<RecipeMaker />} />
 
           <Route path="favouriterecipes" element={<FavouriteRecipes />} />

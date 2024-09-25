@@ -1,6 +1,44 @@
 
 
-.active{
-    color: brown;
-    
-}
+
+.custom-navbar {
+    background-color:rgba(128, 128, 128, 0.815); /* Customize background color */
+    padding: 10px 20px;
+  }
+  
+  /* Use flexbox to control the spacing of navbar items */
+  .flex-nav {
+    display: flex;
+    justify-content:space-evenly; /* Space items between start, center, and end */
+    width: 100%;
+  }
+  
+  .nav-item a {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .nav-item a:hover {
+    color:black; /* Optional: link hover color */
+  }
+  
+  /* Optional: Style for Start, Center, and End */
+  .nav-item.start {
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+  
+  .nav-item.center {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .nav-item.end {
+    flex-grow: 1;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  
+  

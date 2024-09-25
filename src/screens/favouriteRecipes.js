@@ -13,7 +13,7 @@ const FavouriteRecipes = () => {
     return (
         <>
             <NavBar />
-            <h2>Welcome to Favourite Recipes Page</h2>
+            <center><h2>Welcome to Favourite Recipes Page</h2></center>
             <div className="recipe-container">
                 {favouriteRecipe.length > 0 ?
                     favouriteRecipe.map(each => (
