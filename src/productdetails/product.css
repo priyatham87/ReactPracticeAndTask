@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px black;
+    background-color: #f9f9f945;
+    text-align: center;
+    width: 400px;
+  }
+  
+ 
+  
