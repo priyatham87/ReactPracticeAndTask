@@ -1,9 +1,20 @@
 import "./App.css";
-import NavigationStack from "./navigations/navigation";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Search } from "./shoppers/search";
+import { Categories } from "./shoppers/categories";
+import { Navigations } from "./navigations/navigations";
+import { Todo } from "./todo/todo";
+
 
 function App() {
-  return <NavigationStack />;
+  return(
+    <div>
+      {/* <Search/>
+      <Categories/>
+      <Navigations/> */}
+      <Todo/>
+    </div>
+  )
 }
 
 export default App;
