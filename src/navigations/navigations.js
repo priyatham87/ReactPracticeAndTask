@@ -14,7 +14,7 @@ export const Navigations = () => {
     <div>
         <BrowserRouter>
         <Routes>
-            <Route path='men' element={<Men/>}></Route>
+            <Route path='/men' element={<Men/>}></Route>
             <Route path='women' element={<Women/>}></Route>
             <Route path='kids' element={<Kids/>}></Route>
             <Route path='beauty' element={<Beauty/>}></Route>

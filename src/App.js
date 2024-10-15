@@ -9,10 +9,10 @@ import { Todo } from "./todo/todo";
 function App() {
   return(
     <div>
-      {/* <Search/>
+      <Search/>
       <Categories/>
-      <Navigations/> */}
-      <Todo/>
+      <Navigations/>
+      {/* <Todo/> */}
     </div>
   )
 }
