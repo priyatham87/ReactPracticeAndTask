@@ -10,6 +10,7 @@ export const Search = () => {
         <select>
             <option>Login</option>
         </select>
+        <i class="fa-solid fa-file"></i>
        
         </div>
     </div>

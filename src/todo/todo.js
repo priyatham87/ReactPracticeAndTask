@@ -8,10 +8,14 @@ export const Todo = () => {
         task:"taskTwo",}])
     const addHandler=()=>{
         const newTodo={ id:3,
-            task:"taskthree",}
-        setTodo(...todo,newTodo)
+            task:"taskthree"}
+        setTodo([...todo,newTodo])
     }
-    const deleteHandler=()=>{
+    const deleteHandler=(i)=>{
+    const filter=todo.filter((e)=>e.id!==i)
+    setTodo(filter)
+
+    
 
     }
   return (
@@ -21,7 +25,7 @@ export const Todo = () => {
             <br></br>
         <button onClick={addHandler}>Add</button>
         {
-            todo.map((each)=>{
+            todo?.map((each)=>{
                 return(
                     <div style={{display:'flex', justifyContent:'space-between', width:500}}>
                         <h2>{each.task}</h2>

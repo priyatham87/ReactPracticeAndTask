@@ -5,7 +5,9 @@ export const Men = () => {
   return (
    <>
     <Navbar/>
-    <div>M</div>
+    <div>
+      <center><h1>MEN'S Categories</h1></center>
+    </div>
    </>
   )
 }

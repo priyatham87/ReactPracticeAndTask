@@ -10,7 +10,7 @@ function App() {
   return(
     <div>
       <Search/>
-      <Categories/>
+      {/* <Categories/> */}
       <Navigations/>
       {/* <Todo/> */}
     </div>
