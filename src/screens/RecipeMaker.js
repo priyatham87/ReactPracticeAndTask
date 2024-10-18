@@ -20,7 +20,7 @@ const RecipeMaker = () => {
     
     const addFoodHandler = (eachFood) => {
         // console.log("added")
-        const updatedList = filteredList.map(each=> (each.id==eachFood.id ? { ...each, existsInFavorite:true }: each))
+        const updatedList = filteredList.map(each=> (each.id===eachFood.id ? { ...each, existsInFavorite:true }: each))
         addfavouriteRecipe(eachFood); 
         setFilteredList(updatedList)   
     };
