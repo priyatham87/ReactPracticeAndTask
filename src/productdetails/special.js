@@ -3,6 +3,7 @@ export const Special=(prop)=>{
     return(
         <>
         <h2>specifications:{spl.batteryLife}</h2>
+        
         </>
     )
 }

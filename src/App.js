@@ -1,5 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
+import SingUp from './LoginPage/singup';
+import FakeStore from './Searchfakestore/FakeStore';
 import {Product} from './productdetails/product';
 
 // import 'bootstrap/dist/css/bootstrap. css';
@@ -8,7 +10,9 @@ import {Product} from './productdetails/product';
 function App() {
   return (
     <div >
-     <Product/>
+     {/* <Product/> */}
+     {/* <FakeStore/> */}
+     <SingUp/>
   </div>
   );
 }

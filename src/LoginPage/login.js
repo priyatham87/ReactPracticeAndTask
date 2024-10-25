@@ -7,9 +7,8 @@ const Login = () => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    const emailInStore=window.localStorage.getItem("SingupDetails")
-    console.log(emailInStore);
-    console.log(email);
+    const emailInStore=JSON.parse(window.localStorage.getItem("SingupDetails"))
+    console.log(emailInStore.name);
     
     
    
