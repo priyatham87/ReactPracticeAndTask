@@ -11,8 +11,8 @@ function App() {
   return (
     <div >
      {/* <Product/> */}
-     {/* <FakeStore/> */}
-     <SingUp/>
+     <FakeStore/>
+     {/* <SingUp/> */}
   </div>
   );
 }
