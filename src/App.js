@@ -8,8 +8,8 @@ import { Todo } from "./todo/todo";
 function App() {
   return(
     <div>
-      {/* <Search/>
-      <Navigations/> */}
+      <Search/>
+      <Navigations/>
       <Todo/>
     </div>
   )

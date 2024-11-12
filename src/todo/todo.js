@@ -25,7 +25,7 @@ export const Todo = () => {
             <br></br>
         <button onClick={addHandler}>Add</button>
         {
-            todo?.map((each)=>{
+            todo.map((each)=>{
                 return(
                     <div style={{display:'flex', justifyContent:'space-between', width:500}}>
                         <h2>{each.task}</h2>
